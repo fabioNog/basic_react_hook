@@ -1,5 +1,14 @@
+const Button = () => {
+    return(
+        <button>My Button</button>
+    )
+    
+}
+
 export const Dashboard = () => {
     return (
-        <h1>Dashboard</h1>
+        <div>
+            <Button/>
+        </div>
     )
 }
