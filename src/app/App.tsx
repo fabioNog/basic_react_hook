@@ -1,9 +1,10 @@
 import React from 'react';
+import { RoutesApp } from './routes';
 
 function App() {
   return (
     <div>
-      Hello 
+      <RoutesApp/>
     </div>
   );
 }
