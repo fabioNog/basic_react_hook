@@ -1,11 +1,17 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const Login = () => {
+
+    let navigate = useNavigate();
+
+    async function handleClick() {
+        await navigate("/", { replace: true });
+    }
     return (
         <div>
-            <Link to={"/"}>
-                Dashboard
-            </Link>
+            <button onClick={handleClick}>
+                Initial page
+            </button>
         </div>
-    )   
+    )
 }
