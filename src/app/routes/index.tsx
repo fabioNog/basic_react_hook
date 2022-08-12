@@ -7,7 +7,8 @@ import {
     Route,
     Navigate 
 } from "react-router-dom";
-import { Dashboard } from "../pages/Dashboard";
+import { Dashboard } from "../pages/dashboard/Dashboard";
+import { Login } from "../pages/login/Login";
 // import your route components too
 
 export const RoutesApp = () => {
@@ -15,6 +16,7 @@ export const RoutesApp = () => {
     <BrowserRouter>
         <Routes>
             <Route path="/"  element={<Dashboard/>}/>
+            <Route path="/login"  element={<Login/>}/>
             <Route
         path="*"
         element={<Navigate to="/" replace />}
@@ -24,4 +26,6 @@ export const RoutesApp = () => {
     )
 
 }
+
+
 

@@ -1,6 +1,10 @@
+import { Link } from "react-router-dom";
+
 const Button = () => {
     return(
-        <button>My Button</button>
+        <Link to={"/login"}>
+            Login
+        </Link>
     )
     
 }
