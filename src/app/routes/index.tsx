@@ -11,6 +11,7 @@ import { Dashboard } from "../pages/dashboard/Dashboard";
 import { Login } from "../pages/login/Login";
 import { Login2 } from "../pages/login/Login2";
 import { Login3 } from "../pages/login/Login3";
+import { Login4 } from "../pages/login/Login4";
 // import your route components too
 
 export const RoutesApp = () => {
@@ -21,6 +22,7 @@ export const RoutesApp = () => {
             <Route path="/login"  element={<Login/>}/>
             <Route path="/login2"  element={<Login2/>}/>
             <Route path="/login3"  element={<Login3/>}/>
+            <Route path="/login4"  element={<Login4/>}/>
             <Route
         path="*"
         element={<Navigate to="/" replace />}
